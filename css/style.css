@@ -1,0 +1,86 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+
+   margin: 0 auto;
+   font-size: 1em;
+   color: #838c8b;
+   font-family: 'Hadar-font', sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    color: tomato;
+  }
+
+  h3 {
+    text-align: center;
+    color: lightgray;
+    font-size: 14px;
+  }
+
+
+.container,
+.wrap {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrap {
+  max-width: 90%;
+}
+
+.img-tum {
+  margin: 25px;
+  box-shadow: 5px 10px lightgray;
+  border-radius: 3px;
+}
+
+#searchbox {
+  padding: 10px;
+  margin: 40px auto 0 auto;
+  border-radius: 5px;
+  display: block;
+}
+
+#searchbox:focus {
+  background-color: tomato;
+  color: white;
+  border: none;
+
+}
+
+@media (min-width: 768px){
+
+  .wrap {
+    max-width: 1200px;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #searchbox {
+    width: 600px;
+  }
+
+/* ---- lightbox ---- */
+
+
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
